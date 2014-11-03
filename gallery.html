@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bootstrap Tutorial 2</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+        <link href="bootstrap/css/thisbody.css" rel="stylesheet">
+    </head>
+    <body>
+        
+        <!------------------------ Tutorial #2: Responsive Collapsing Navbar------------------------>
+        <div class="navbar navbar-inverse navbar-static-top">
+		<div class = "container">
+			<a href = "home.html" class = "navbar-brand">
+                            <img id="logo" src="img/logo.png">
+                            <span id="logotext">The K9 Pack Leader</span>
+                        </a>
+			
+			<button class ="navbar-toggle" data-toggle ="collapse" data-target =".navHeaderCollapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			
+			<div class = "collapse navbar-collapse navHeaderCollapse">
+			
+				<ul class = "nav navbar-nav navbar-right">
+					<li><a href = "home.html">HOME</a></li>
+					<li><a href = "about.html">ABOUT</a></li>
+					<li><a href = "testimonial.html">TESTIMONIAL</a></li>				
+					<li class ="active"><a href = "gallery.html">GALLERY</a></li>
+					<li><a href = "#contact" data-toggle="modal">CONTACT</a></li>		
+				</ul>
+				
+			</div>
+		</div>
+	</div>
+        <!------------------------ End of Tutorial #2: Responsive Collapsing Navbar------------------------>
+        
+        <div id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+            <div class="item active" >
+				 <img src ="img/1.jpg" alt="photo" class ="img-responsive"> 
+            </div>
+            <div class="item">
+				 <img src ="img/2.jpg" alt="photo" class ="img-responsive"> 
+            </div>
+            <div class="item">
+				 <img src ="img/3.jpg" alt="photo" class ="img-responsive"> 
+            </div>
+            <div class="item">
+				 <img src ="img/4.jpg" alt="photo" class ="img-responsive"> 
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+
+    </div>
+        
+        
+      
+        
+        <!------------------------ Tutorial #6: Modals(Popup Box) ------------------------>
+         <div class = "modal fade" id = "contact" role = "dialog">
+            <div class = "modal-dialog">
+                <div class = "modal-content">
+                    <div class = "modal-header">
+                        <h4>Contact Us</h4>
+                            </div>
+                            <div class = "modal-body">
+                                <p>Email: thek9packleader@gmail.com</p>
+                                <p>Contact: 9009 8745</p>
+                            </div>
+                            <div class = "modal-footer">   
+                                <a class = "btn btn-primary" data-dismiss = "modal">Close</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!------------------------ Tutorial #6: Modals(Popup Box) ------------------------>   
+        
+        <!------------------------ Tutorial #3: Sticky Footer ------------------------>
+        <div class ="navbar nav-default navbar-fixed-bottom navbar-inverse">
+            <div class ="container">
+                <p class="navbar-text pull-left"><b>Site Design by C-D-J-V<b></p>
+                <a href="https://www.facebook.com/theK9PackLeader" class="navbar-btn btn pull-right">Like Us on Facebook</a>
+            </div>
+        </div>
+        <!------------------------ End of Tutorial #3: Sticky Footer ------------------------>
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="bootstrap/js/bootstrap.js"></script>
+    
+            <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 3500 //changes the speed
+    })
+    </script>
+        
+    </body>
+</html>
