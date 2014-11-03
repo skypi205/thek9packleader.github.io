@@ -1,0 +1,41 @@
+
+
+body {
+    margin-bottom: 80px;
+}
+
+#logo {
+    height: 200%;
+    margin-top: -10px;
+}
+
+#logotext {
+    font-family: handlee;
+    font-weight: bold;
+}
+
+
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
+
+.page-header {
+    margin-top: 0;
+}
+
+-panel-body{
+    padding-top: 0;
+}
+
+.test {
+    height: 100%;
+    width: 100%;    
+    margin-top: 60px;
+        
+}
+
+
+.carousel-inner{
+    height: 100%;
+    width: 100%;
+}
