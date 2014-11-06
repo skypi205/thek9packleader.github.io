@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bootstrap Tutorial 2</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="bootstrap.min.css" rel="stylesheet">
+	<link href="bootstrap.css" rel="stylesheet">
+        <link href="this.css" rel="stylesheet">
+    </head>
+    <body>
+        
+        <!------------------------ Tutorial #2: Responsive Collapsing Navbar------------------------>
+        <div class="navbar navbar-inverse navbar-static-top">
+		<div class = "container">
+			<a href = "home.html" class = "navbar-brand">
+                            <img id="logo" src="img/logo.png">
+                            <span id="logotext">The K9 Pack Leader</span>
+                        </a>
+			
+			<button class ="navbar-toggle" data-toggle ="collapse" data-target =".navHeaderCollapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			
+			<div class = "collapse navbar-collapse navHeaderCollapse">
+			
+				<ul class = "nav navbar-nav navbar-right">
+					<li><a href = "home.html">HOME</a></li>
+					<li><a href = "about.html">ABOUT</a></li>
+					<li><a href = "testimonial.html">TESTIMONIAL</a></li>				
+					<li><a href = "gallery.html">GALLERY</a></li>
+					<li class ="active"><a href = "contact.html">CONTACT</a></li>		
+				</ul>
+				
+			</div>
+		</div>
+	</div>
+        <!------------------------ End of Tutorial #2: Responsive Collapsing Navbar------------------------>
+        
+      
+        
+        <!------------------------ Tutorial #5: Responsive Grid System ------------------------>
+        <div class = "container">
+           
+            <div class = "row">
+               
+                <div class = "col-md-8">
+                    <h3><a href = "#">CONTACT</a></h3>
+					<p>If you have any enquires regarding our Behavioural Corrective Programme (BCP),
+					please feel free to use the form below. We'll get in touch as soon as we can.</p><br>
+                 <form class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+
+<!--<legend>Form Name</legend>-->
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Name :</label>  
+  <div class="col-md-6">
+  <input id="textinput" name="textinput" type="text" placeholder="Your name" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Email :</label>  
+  <div class="col-md-6">
+  <input id="textinput" name="textinput" type="text" placeholder="example123@hotmail.com" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Textarea -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textarea">Message :</label>
+  <div class="col-md-6">                     
+    <textarea class="form-control" id="textarea" name="textarea" ></textarea>
+  </div>
+</div>
+<br>
+<!-- File Button --> 
+<div class="form-group">
+  <label class="col-md-4 control-label" for="Upload :">File Button</label>
+  <div class="col-md-4">
+    <input id="Upload :" name="Upload :" class="input-file" type="file">
+  </div>
+</div>
+<br>
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-6 control-label" for="singlebutton"></label>
+  <div class="col-md-4 pull-right">
+    <button id="singlebutton" name="singlebutton" class="btn btn-inverse">Submit</button>
+    <button id="singlebutton" name="singlebutton" class="btn btn-inverse" input type="reset">Clear</button>
+ </div>
+</div>
+
+</fieldset>
+</form>
+
+
+                   
+                </div>
+               
+                <div class = "col-md-4">
+                   
+                   <img class="test" src="http://i.imgur.com/W4fKTqQ.jpg">
+                   
+                </div>    
+            </div>  
+        </div>
+        
+        <hr class="divider">
+        
+      
+        
+        <!------------------------ End of Tutorial #5: Responsive Grid System ------------------------>
+
+        
+        <!------------------------ Tutorial #3: Sticky Footer ------------------------>
+        <div class ="navbar nav-default navbar-fixed-bottom navbar-inverse">
+            <div class ="container">
+                <p class="navbar-text pull-left"><b>Site Design by C-D-J-V<b>
+				</p>
+				
+                <a href="https://www.facebook.com/theK9PackLeader" class="navbar-btn btn pull-right">Like Us on Facebook</a>
+            </div>
+        </div>
+        <!------------------------ End of Tutorial #3: Sticky Footer ------------------------>
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="bootstrap.js"></script>
+        
+        <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-55936454-1', 'auto');
+  ga('send', 'pageview');
+</script>
+        
+        
+            <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
+    
+    </body>
+</html>
