@@ -1,9 +1,9 @@
-#photo01{
-    margin-right: 300px;
-}
-
 body {
     margin-bottom: 80px;
+}
+
+#photo01{
+    margin-left: -300px;
 }
 
 #logo {
